@@ -1,0 +1,24 @@
+#replicaset
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: my-replicaset
+spec:
+  replicas: 3 # Number of desired replicas
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-container
+        image: nginx
+        ports:
+        - containerPort: 80
+      - name: my-con2
+        image: tomact
+        ports:
+        - containerPort: 8080
