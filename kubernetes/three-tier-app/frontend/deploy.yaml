@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: frontend-app
-        image: yogeshreeppawar453/frontend-app:latest
+        image: yogeshreeppawar453/docker-repos:frontendlatest
         resources:
           limits:
             memory: "128Mi"
