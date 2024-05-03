@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: backend-app
-        image: yogeshreeppawar453/backend-app:latest
+        image: yogeshreeppawar453/docker-repos:backendlatest
         resources:
           limits:
             memory: "128Mi"
